@@ -1,0 +1,58 @@
+section.topo {
+    padding: 40px 4%;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topo h1 {
+    color: antiquewhite;
+    font-size: 40px;
+    font-weight: 550;
+    line-height: 40px;
+    max-width: 625px;
+}
+
+.topo .txt-topo h1 span {
+    color: rgb(132, 0, 255);
+}
+
+.topo .txt-topo p {
+    color: antiquewhite;
+    margin: 40px 0;
+    max-width: 550px;
+}
+
+.img-topo1 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 1));
+    transition: 5s;
+}
+
+.img-topo2 {
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    transition: 5s;
+}
+
+.img-topo:hover {
+    opacity: 100%;
+    mask-image: none;
+}
+
+@media screen and (max-width: 768px) {
+    .topo .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-topo1, .img-topo2 {
+        margin-top: 20px;
+    }
+
+    .img-topo1 img, .img-topo2 img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,97 @@
+* {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: fixed linear-gradient(315deg, #350f62 0%, #17202a 100%);
+    height: 100vh;
+    color: antiquewhite;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(106, 101, 116);
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+header a:hover {
+    color: antiquewhite;
+    transform: scale(1.09);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.logo .container img {
+    max-width: 200px;
+    max-height: 115px;
+    width: auto;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.button, .social {
+    line-height: 60px;
+    text-align: center;
+}
+
+.insta-icone {
+    color: antiquewhite;
+    transition: color 0.3s;
+    text-decoration: none;
+    font-size: 64px;
+}
+
+.insta-icone:hover {
+    color: rgb(87, 27, 143);
+}
+
+@media screen and (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav.menu-desktop {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+}
